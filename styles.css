@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: ivory;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.todo-container {
+    width: 100%;
+    max-width: 480px;
+    margin-top: 60px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    color: #333333;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #333333;
+}
+
+button {
+    background-color: #1cc20a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333333;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: #666666;
+}
+
+.task-controls button {
+    margin-left: 5px;
+    background: #eee;
+    color: #333;
+    font-size: 13px;
+}
+
+.task-controls button:hover {
+    background: #ddd;
+}
+
+.empty {
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+}
+
+@media(max-width: 480px) {
+    .todo-container {
+        margin: 20px;
+    }
+}
